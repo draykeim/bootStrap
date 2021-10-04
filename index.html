@@ -14,10 +14,7 @@
 <!-- 1 Bootstrap: Use Responsive Design with Bootstrap Fluid Containers
 -->
 <!-- To get started, we should nest all of our HTML (except the link tag and the style element) in a div element with the class container-fluid. -->
-<!-- Testing source control -->
-<!-- Testing source control -->
-<!-- Trying one more time -->
-<!-- Showing off for class -->
+
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .red-text {
@@ -1112,8 +1109,8 @@ All textual <input>, <textarea>, and <select> elements with the class .form-cont
         <label><input type="checkbox" name="personality"> Crazy</label>
       </div>
     </div>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+    <button type="submit" class="btn btn-primary"> <i class="fa fa-paper-plane">  Submit</i> </button>
   </form>
 </div>
 
@@ -1199,19 +1196,20 @@ Nest both your form's text input and submit button within a div with the class r
 <!-- To start with, create an h3 element, with the text jQuery Playground.
 Color your h3 element with the text-primary Bootstrap class, and center it with the text-center Bootstrap class. -->
 
-
+<h3 class="text-primary text-center">jquery playground</h3>
 
 <!-- 20 Bootstrap: House our page within a Bootstrap container-fluid div
 -->
 <!-- Now let's make sure all the content on your page is mobile-responsive. -->
 <!-- Let's nest your h3 element within a div element with the class container-fluid.-->
+<div class="container-fluid">
 <h3 class="text-primary text-center">jQuery Playground</h3>
-
+</div>
 <!-- 21 Bootstrap: Create a Bootstrap Row-->
 <!-- Create a div element below the h3 tag, with a class of row.-->
 <div class="container-fluid">
     <h3 class="text-primary text-center">jQuery Playground</h3>
-
+  <div class="row"></div>
   </div>
 
   <!-- 22 Bootstrap: Split Your Bootstrap Row-->
@@ -1220,7 +1218,8 @@ Create two div elements within your row, both with the class col-xs-6. -->
 <div class="container-fluid">
     <h3 class="text-primary text-center">jQuery Playground</h3>
     <div class="row">
-
+      <div class="col-xs-"></div>
+      <div class="col-xs-"></div>
 
     </div>
   </div>
@@ -1232,10 +1231,10 @@ Nest one div element with the class well within each of your col-xs-6 div elemen
     <h3 class="text-primary text-center">jQuery Playground</h3>
     <div class="row">
       <div class="col-xs-6">
-
+        <div class="well"></div>
       </div>
       <div class="col-xs-6">
-
+        <div class="well"> target</div>
       </div>
     </div>
   </div>
@@ -1296,16 +1295,16 @@ Give each of your button elements the class target. -->
     <div class="row">
       <div class="col-xs-6">
         <div class="well">
-          <button class="btn btn-default"></button>
-          <button class="btn btn-default"></button>
-          <button class="btn btn-default"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
         </div>
       </div>
       <div class="col-xs-6">
         <div class="well">
-          <button class="btn btn-default"></button>
-          <button class="btn btn-default"></button>
-          <button class="btn btn-default"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
         </div>
       </div>
     </div>
@@ -1324,14 +1323,14 @@ Give the well on the left the id of left-well. Give the well on the right the id
     <h3 class="text-primary text-center">jQuery Playground</h3>
     <div class="row">
       <div class="col-xs-6">
-        <div class="well">
+        <div class="well" id='left-well'>
           <button class="btn btn-default target"></button>
           <button class="btn btn-default target"></button>
           <button class="btn btn-default target"></button>
         </div>
       </div>
       <div class="col-xs-6">
-        <div class="well">
+        <div class="well" id='right-well'>
           <button class="btn btn-default target"></button>
           <button class="btn btn-default target"></button>
           <button class="btn btn-default target"></button>
@@ -1375,17 +1374,17 @@ Make sure that target1 to target3 are in #left-well, and target4 to target6 are 
       <div class="col-xs-6">
         <h4>#left-well</h4>
         <div class="well" id="left-well">
-          <button class="btn btn-default target"></button>
-          <button class="btn btn-default target"></button>
-          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target" id="target1"></button>
+          <button class="btn btn-default target" id="target2"></button>
+          <button class="btn btn-default target" id="target3"></button>
         </div>
       </div>
       <div class="col-xs-6">
         <h4>#right-well</h4>
         <div class="well" id="right-well">
-          <button class="btn btn-default target"></button>
-          <button class="btn btn-default target"></button>
-          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target" id="target4"></button>
+          <button class="btn btn-default target" id="target5"></button>
+          <button class="btn btn-default target" id="target6"></button>
         </div>
       </div>
     </div>
@@ -1401,7 +1400,7 @@ Give each of your button elements text that corresponds to its id's selector. --
       <div class="col-xs-6">
         <h4>#left-well</h4>
         <div class="well" id="left-well">
-          <button class="btn btn-default target" id="target1"></button>
+          <button class="btn btn-default target" id="target1">#target1</button>
           <button class="btn btn-default target" id="target2"></button>
           <button class="btn btn-default target" id="target3"></button>
         </div>
@@ -1423,6 +1422,7 @@ Give each of your button elements text that corresponds to its id's selector. --
 Remember that you can start a comment with <!-- and end a comment with -->
 
 <!--Add a comment at the top of your HTML that says Code below this line should not be changed -->
+<!-- DONT CHANGE THIS. -->
 <div class="container-fluid">
     <h3 class="text-primary text-center">jQuery Playground</h3>
     <div class="row">
